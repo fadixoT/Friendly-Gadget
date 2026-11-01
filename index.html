@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>
+
+Friendly Gadgets
+
+</title>
+    
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    body{
+     overflow-x: hidden; 
+    font-family: roboto;
+    }
+    body::-webkit-scrollbar{
+      display:none;
+    }
+    .header-container{
+      height:60px;
+      padding-bottom: 20px;
+      background-color: rgb(234, 227, 227);
+      box-shadow:0 1px 6px rgba(0,0,0,0.5);
+      display:flex;
+    }
+    .logo{
+      width:80px;
+      height:80px;
+    }
+      
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    width: 100%;
+    height: 35px;
+    padding: 0 40px;
+    margin: 30px 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.search-box i {
+    color: #555;
+    font-size: 18px;
+    cursor: pointer;
+}
+    .search-bar:active{
+      border:none;
+    }
+    .categories{
+      width:100%;
+      height: 25px;
+      padding:5px 0;
+      margin-top: 20px;
+      text-align: center;
+      background-color: rgb(86, 44, 169);
+      overflow-y: hidden; 
+      white-space: nowrap;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+
+    }
+    .categories::-webkit-scrollbar{
+      display:none;
+    }
+    .items-page{
+      color:white;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 10px;
+      padding-top: 3.5px;
+      font-family: roboto;
+      font-weight: bold;
+      display:inline-flex;
+    }
+    .items-box{
+      display:grid;
+      grid-template-columns: repeat(8, 1fr);
+    }
+    .gadget-display{
+      width: 100%;
+     height:fit-content;
+    }
+    .gadget-display-items{
+      display:grid;
+      grid-template-columns: repeat( 1,1fr);
+      background-color:rgb(138, 34, 226);
+      margin: 30px;
+      margin-top: 90px;
+      padding: 50px;
+      height:auto;
+      border-radius:30px;
+    }
+    .product-image-set{
+      max-width:100%;
+      display:block;
+      border-radius:200px;
+     
+    }
+    .gadget-container{
+      display:grid;
+      grid-template-columns: repeat( 1,1fr);
+      margin: 10;
+      padding: 0;
+      font-weight: bold;
+      text-align: center;
+      font-family: roboto;
+    }
+    .product-container{
+      display: grid;
+      grid-template-columns:repeat( 4, 1fr);
+      column-gap: 0;
+      row-gap: 10px;
+      width:auto;
+      margin: 30px;
+      margin-top:60px;
+      padding:15px;
+      background-color: rgb(192, 178, 205);
+      border-radius: 30px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .apple-deal-box{
+      margin: 30px;
+      margin-top: 60px;
+      padding: 15px 0 10px 0;
+      background-color: rgb(192, 178, 205);
+      border-radius: 30px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .apple-products-container{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 16px;
+      padding:0 15px 0 15px;
+      background-color: rgba(192, 178, 205, 0.035);
+      overflow-y: hidden; 
+      white-space: nowrap;
+      display: flex;
+      flex-direction:row;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    .apple-products-container::-webkit-scrollbar{
+      display:none;
+    }
+    .apple-product{
+      background: white;
+      border-radius:20px;
+      border-style: 1px solid #1e1a1a;
+      min-width:180px;
+      max-width: 180px;
+      flex-shrink: 0;
+      max-height: 320px;
+      padding:2px 2px 20px 2px;
+    }
+    .price-tag{
+      font-size:14px;
+      color:green;
+    }
+    .product-name{
+      font-size:8px;
+    }
+    .name-price-container{
+      margin-left: 5px;
+    }
+   </style>
+</head>
+
+<body>
+   <header class="header-container">
+      <img class="logo" src="logo.png" alt="logo">
+
+<div class="search-box">
+    <input type="search" placeholder="Search gadgets...">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+   </header> 
+   
+   <header class="categories">
+      <div class="items-box">
+        <div class="items-link"><a class="items-page" href="/watch-set/watch.html">Watches.</a></div>
+        <div class="items-link"><a class="items-page" href="/phones-set/phone.html">Phones.</a></div>
+        <div class="items-link"><a class="items-page" href="/ear-buds-set/earbud.html">Earbuds.</a></div>
+        <div class="items-link"><a class="items-page" href="/MP3-player/MP3-player.html">MP3 Player.</a></div>
+        <div class="items-link"><a class="items-page" href="/Portable-power-supply/portable-power.html">Portable Power supply.  </a></div>
+        <div class="items-link"><a class="items-page" href="/Headphone-set/headphone.html">Headphones.  </a></div>
+        <div class="items-link"><a class="items-page" href="/Phone-case-set/phone-case.html">Phone Cases. </a></div>
+        <div class="items-link"><a class="items-page" href="/Charger-set/charger.html">Charger. </a></div>
+      </div><s></s>
+   </header>
+
+   <div class="gadget-display-items"><img class="gadget-display" src="gadget-display.png" alt="gadget-display"></div>
+
+   <div class="product-container">
+       <div class="gadget-container"> <a class="items-page" href="/phones-set/phone.html"><img class="product-image-set" src="phone-deals.png" alt="phone-deals"></a> Phone Deals</div>
+       <div class="gadget-container"> <a class="items-page" href="/ear-buds-set/earbud.html"><img class="product-image-set" src="earbud-deals.png" alt=" ear-buds-deals"></a> Earbud</div>
+       <div class="gadget-container"> <a class="items-page" href="/Charger-set/charger.html"><img class="product-image-set" src="cable-deals.png" alt="charger-deals"></a> Charger & cord</div>
+       <div class="gadget-container"> <a class="items-page" href="/Headphone-set/headphone.html"><img class="product-image-set" src="head-set-deals.png" alt="Headphone"></a> Headset</div>
+       <div class="gadget-container"> <a class="items-page" href="/MP3-player/MP3-player.html"><img class="product-image-set" src="MP3-deals.png" alt=" MP3 player"></a> MP3 Player</div>
+       <div class="gadget-container"> <a class="items-page" href="/Phone-case-set/phone-case.html"><img class="product-image-set" src="phone-case-deals.png" alt="Phone cases"></a> Phone Cases</div>
+       <div class="gadget-container"> <a class="items-page" href="/watch-set/watch.html"><img class="product-image-set" src="smart-watch-deals.png" alt="Watches"></a> Watche</div>
+       <div class="gadget-container"> <a class="items-page" href="/Portable-power-supply/portable-power.html"><img class="product-image-set" src="portable-power-deals.png" alt="Portable Power supply"></a> Portable Power Supply</div>
+   </div>
+<div class="apple-deal-box">
+<h1 style="margin-left: 15px;">Apple deals</h1>
+
+   <div class="apple-products-container" >
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone-12-pro.jpg" alt="Iphone 12 pro"> <div class="name-price-container"><div class="product-name"><h1>Iphone 12 pro</h1></div> <div class="price-tag"><p>Price</p> <p>$390,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone-15-pro-max.jpg" alt="Iphine15 promax"> <div class="name-price-container"><div class="product-name"><h1>Iphone 15 pro max</h1></div> <div class="price-tag"><p>Price</p> <p>$600,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone 11.jpg" alt=" Iphone 11"> <div class="name-price-container"><div class="product-name"><h1>Iphone 11</h1></div> <div class="price-tag"><p>Price</p> <p>$300,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone 13 pro.jpg" alt=" IPhone 13 pro"> <div class="name-price-container"><div class="product-name"><h1>Iphone 13 pro</h1></div> <div class="price-tag"><p>Price</p> <p>$430,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone 14.jpg" alt="Iphone 14"> <div class="name-price-container"><div class="product-name"> <h1>Iphone 14</h1></div> <div class="price-tag"><p>Price</p> <p>$400,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone 15 pro.jpg" alt=" Iphone 15 pro"> <div class="name-price-container"><div class="product-name"><h1>Iphone 15 pro</h1></div> <div class="price-tag"><p>Price</p> <p>$560,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone 16.jpg" alt=" Iphone 16"> <div class="name-price-container"><div class="product-name"><h1>Iphone 16</h1></div> <div class="price-tag"><p>Price</p> <p>$1,100,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone 17.jpg" alt="Iphone 17"> <div class="name-price-container"><div class="product-name"><h1>Iphone 17</h1></div> <div class="price-tag"><p>Price</p> <p>$1,300,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone 18 pro.jpg" alt="Iphone 18 pro"> <div class="name-price-container"><div class="product-name"><h1>Iphone 18 pro</h1></div> <div class="price-tag"><p>Price</p> <p>$2,250,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="" alt="Iphone "> </div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="" alt=""></div>
+   </div>
+   </div>
+
+   <div class="apple-deal-box">
+<h1 style="margin-left: 15px;">Categories</h1>
+
+   <div class="apple-products-container" >
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="cable.jpg" alt="Cable"> <div class="name-price-container"><div class="product-name"><h1>Cable</h1></div> <div class="price-tag"><p>Price</p> <p>$3,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="iphone-15-pro-max.jpg" alt="Iphine15 promax"> <div class="name-price-container"><div class="product-name"><h1>Iphone 15 pro max <br>Case</h1></div> <div class="price-tag"><p>Price</p> <p>$600,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="earbud-5.jpg" alt=" Earbud"> <div class="name-price-container"><div class="product-name"><h1>Earbud</h1></div> <div class="price-tag"><p>Price</p> <p>$19,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="galaxy-buds2.jpg" alt=" Galaxy bud"> <div class="name-price-container"><div class="product-name"><h1>Galaxy bud</h1></div> <div class="price-tag"><p>Price</p> <p>$26,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="galaxy-watch-fe.jpg" alt="Galaxy watch"> <div class="name-price-container"><div class="product-name"> <h1>Galaxy Watch</h1></div> <div class="price-tag"><p>Price</p> <p>$42,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="JBL.jpg" alt=" JBL"> <div class="name-price-container"><div class="product-name"><h1>JBL MP3 Player</h1></div> <div class="price-tag"><p>Price</p> <p>$94,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="oraimo-cord.jpg" alt=" Oraimo Cord"> <div class="name-price-container"><div class="product-name"><h1>Oraimo Cord</h1></div> <div class="price-tag"><p>Price</p> <p>$4,600</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="T&G.jpg" alt="T&G "> <div class="name-price-container"><div class="product-name"><h1>T&G MP3 Player</h1></div> <div class="price-tag"><p>Price</p> <p>$38,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="power-bank.jpg" alt="Power Station"> <div class="name-price-container"><div class="product-name"><h1>Portable Power Station</h1></div> <div class="price-tag"><p>Price</p> <p>$30,000</p></div> </div></div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="" alt="Iphone "> </div>
+     <div class="apple-product"> <img style=" width: 100%; border-top-left-radius:20px; border-top-right-radius:20px; height: 230.5px;" src="" alt=""></div>
+   </div>
+   </div>
+</body>
+
+</html>
