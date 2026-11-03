@@ -32,16 +32,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       display:none;
     }
     .header-container{
+      width: 100%;
       max-width: 100%;
       height:60px;
       padding-bottom: 80px;
       background-color: rgb(234, 227, 227);
       box-shadow:0 1px 6px rgba(0,0,0,0.5);
       display:flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      box-sizing: border-box;
     }
     .logo{
       width:90px;
-      height:80px;
+      height:auto;
+      flex-shrink: 0;
     }
       
 .search-box {
@@ -58,6 +64,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 .search-box input {
     flex: 1;
+    max-width: 100%;
     min-width: 0;
     height: 100%;
     border: none;
