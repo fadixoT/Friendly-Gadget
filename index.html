@@ -133,32 +133,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       border-radius:22px;
     }
     .product-image-set{
-      width: 90px;
-      height:px;
+      width: 70px;
+      height: 70px;
       display:block;
-      object-fit: cover;
-      border-radius:45px;
+      border-radius:14px;
       overflow: hidden;
+      max-width:100%;
+      object-position: center;
     }
-    .gadget-container{
-      padding: 8px;
-      margin:-8px;
-      text-align: center;
-      font-family: roboto,arial;
-      max-width: 120px;
-      margin-left: 14px;
+      .gadget-container{
+      font-family: roboto, arial;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
     }
     .product-container{
       display: grid;
-      grid-template-columns: repeat(4, 1fr );
-      column-gap: ;
-      row-gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
       margin: 10px;
-      margin-top:15px;
-      padding:10px;
+      padding: 15px;
       background-color: rgb(192, 178, 205);
       border-radius: 22px;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
     }
     .apple-deal-box{
       margin: 10px;
@@ -194,7 +194,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       font-size:8px;
     }
     .name-price-container{
-      margin-left: 5px;
+      margin: 5px;
+      border-top-style:solid;
+      border-color: #b7b3b3;
+      border-width:1px;
     }
    </style>
 </head>
@@ -208,7 +211,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <i class="fa-solid fa-magnifying-glass"></i>
 </div>
 
-   </header> 
+   </header>
    
    <header class="categories">
       <div class="items-box">
@@ -226,14 +229,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
    <div class="gadget-display-items"><img class="gadget-display" src="gadget-display.jpg" alt="gadget-display"></div>
 
    <div class="product-container">
-       <div class="gadget-container"> <a class="items-page" href="/phones-set/phone.html"><img class="product-image-set" src="phone-deals.jpg" alt="phone-deals"></a> Phone Deals</div>
-       <div class="gadget-container"> <a class="items-page" href="/ear-buds-set/earbud.html"><img class="product-image-set" src="earbud-deals.jpg" alt=" ear-buds-deals"></a> Earbud</div>
-       <div class="gadget-container"> <a class="items-page" href="/Charger-set/charger.html"><img class="product-image-set" src="cable-deals.jpg" alt="charger-deals"></a> Charger & cord</div>
-       <div class="gadget-container"> <a class="items-page" href="/Headphone-set/headphone.html"><img class="product-image-set" src="head-set-deals.jpg" alt="Headphone"></a> Headset</div>
-       <div class="gadget-container"> <a class="items-page" href="/MP3-player/MP3-player.html"><img class="product-image-set" src="MP3-deals.jpg" alt=" MP3 player"></a> MP3 Player</div>
-       <div class="gadget-container"> <a class="items-page" href="/Phone-case-set/phone-case.html"><img class="product-image-set" src="phone-case-deals.jpg" alt="Phone cases"></a> Phone Cases</div>
-       <div class="gadget-container"> <a class="items-page" href="/watch-set/watch.html"><img class="product-image-set" src="smart-watch-deals.jpg" alt="Watches"></a> Watche</div>
-       <div class="gadget-container"> <a class="items-page" href="/Portable-power-supply/portable-power.html"><img class="product-image-set" src="portable-power-deals.jpg" alt="Portable Power supply"></a> Portable Power Supply</div>
+       <div class="gadget-container"> <a class="items-page" href="/phones-set/phone.html"><img class="product-image-set" src="phone-deals.jpg" alt="phone-deals"></a> <h1 style="text-align:center; font-size:13px;">Phone Deals</h1></div>
+       <div class="gadget-container"> <a class="items-page" href="/ear-buds-set/earbud.html"><img class="product-image-set" src="earbud-deals.jpg" alt=" ear-buds-deals"></a> <h1 style="text-align:center; font-size:13px;">Earbud</h1></div>
+       <div class="gadget-container"> <a class="items-page" href="/Charger-set/charger.html"><img class="product-image-set" src="cable-deals.jpg" alt="charger-deals"></a> <h1 style="text-align:center; font-size:13px;">Charger & cord</h1></div>
+       <div class="gadget-container"> <a class="items-page" href="/Headphone-set/headphone.html"><img class="product-image-set" src="headset-deals.jpg" alt="Headphone"></a> <h1 style="text-align:center; font-size:13px;">Headset</h1></div>
+       <div class="gadget-container"> <a class="items-page" href="/MP3-player/MP3-player.html"><img class="product-image-set" src="MP3-deals.jpg" alt=" MP3 player"></a> <h1 style="text-align:center; font-size:13px;">MP3 Player</h1></div>
+       <div class="gadget-container"> <a class="items-page" href="/Phone-case-set/phone-case.html"><img class="product-image-set" src="phone-case-deals.jpg" alt="Phone cases"></a> <h1 style="text-align:center; font-size:13px;">Phone Cases</h1></div>
+       <div class="gadget-container"> <a class="items-page" href="/watch-set/watch.html"><img class="product-image-set" src="smart-watch-deals.jpg" alt="Watches"></a> <h1 style="text-align:center; font-size:13px;">Watches</h1></div>
+       <div class="gadget-container"> <a class="items-page" href="/Portable-power-supply/portable-power.html"><img class="product-image-set" src="portable-power-deals.jpg" alt="Portable Power supply"></a> <h1 style="text-align:center; font-size:13px;">Portable Power Supply</h1></div>
    </div>
 <div class="apple-deal-box">
 <h1 style="margin-left: 15px; font-size: 28px;">Apple deals</h1>
